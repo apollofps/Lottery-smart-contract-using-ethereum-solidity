@@ -3,8 +3,8 @@ const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
 
 const provider = new HDWalletProvider(
-  "bridge scan symbol steel insect second tool black destroy define gown size",
-  "https://rinkeby.infura.io/v3/5db6d06607134334bb0364b282a26a82"
+  process.env.mnemonic,
+  process.env.api
 );
 const web3 = new Web3(provider);
 
